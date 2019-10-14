@@ -49,7 +49,7 @@ zh:
         job_title_id: 职级
       organ:
         name: 名称
-        name_short: 简称
+        intro: 简介
         area_id: 地区
         address: 地址
         timezone: 时区

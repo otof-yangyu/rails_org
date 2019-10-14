@@ -6,6 +6,7 @@ class RailsOrgInit < ActiveRecord::Migration[6.0]
       t.references :area
       t.references :parent
       t.string :name
+      t.string :intro
       t.string :organ_uuid
       t.integer :limit_wechat
       t.string :address
@@ -31,7 +32,7 @@ class RailsOrgInit < ActiveRecord::Migration[6.0]
       t.datetime :expire_at
       t.timestamps
     end
-    
+
     create_table :departments do |t|
       t.references :organ
       t.references :parent
@@ -100,7 +101,7 @@ class RailsOrgInit < ActiveRecord::Migration[6.0]
       t.integer :cached_role_ids, array: true
       t.timestamps
     end
-    
+
     create_table :job_title_references do |t|
       t.references :super_job_title
       t.references :department_root
@@ -135,13 +136,13 @@ class RailsOrgInit < ActiveRecord::Migration[6.0]
       t.string :code
       t.timestamps
     end
-    
+
     create_table :organ_handles do |t|
       t.string :record_class
       t.string :record_column
       t.timestamps
     end
-    
+
     create_table :department_grants do |t|
       t.references :organ
       t.references :organ_handle

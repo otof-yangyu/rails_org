@@ -7,8 +7,8 @@
       <i class="fas fa-minus fa-fw grey icon"></i>
     <% end %>
     <%= organ.name %>
-    <% if organ.name_short %>
-      (<%= organ.name_short %>)
+    <% if organ.intro %>
+      (<%= organ.intro %>)
     <% end %>
   </td>
   <td><%= image_tag organ.logo.variant(resize_to_limit: [30, 30]) if organ.logo.attached? %></td>
