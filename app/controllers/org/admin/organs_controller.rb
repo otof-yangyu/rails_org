@@ -59,6 +59,7 @@ class Org::Admin::OrgansController < Org::Admin::BaseController
       :name,
       :logo,
       :intro,
+      :address,
       :parent_ancestors,
       :area_ancestors
     )
