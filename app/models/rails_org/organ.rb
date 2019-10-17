@@ -20,7 +20,7 @@ module RailsOrg::Organ
     validates :name, presence: true
     validates :organ_uuid, uniqueness: true
 
-    before_validation do
+    before_validation(on: :create) do
       self.organ_uuid ||= UidHelper.nsec_uuid('ORG')
     end
   end
