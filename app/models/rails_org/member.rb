@@ -5,7 +5,6 @@ module RailsOrg::Member
     has_taxons :department
 
     attribute :experience, :string
-    attribute :attendance_number, :string
     attribute :owned, :boolean, default: false
     
     belongs_to :user, optional: true

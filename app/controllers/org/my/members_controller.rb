@@ -71,7 +71,6 @@ class Org::My::MembersController < Org::My::BaseController
       :name,
       :identity,
       :profession,
-      :attendance_number,
       :next_on_time,
       :next_off_time,
       :experience,
